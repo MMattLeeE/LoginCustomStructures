@@ -1,4 +1,4 @@
-package Util.MyDataStructures;
+package Util.MyDataStructures.List;
 
 /**
  * Created by Matt on 6/12/2017.

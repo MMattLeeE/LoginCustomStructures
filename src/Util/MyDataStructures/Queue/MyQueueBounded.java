@@ -1,11 +1,11 @@
-package Util.MyDataStructures;
+package Util.MyDataStructures.Queue;
 
-import Util.MyDataStructures.Interfaces.Queue.IUnboundedQueue;
+import Util.MyDataStructures.Interfaces.Queue.IBoundedQueue;
 
 /**
- * Created by msl2420 on 6/12/2017.
+ * Created by Matt on 6/12/2017.
  */
-public class MyQueueUnbounded implements IUnboundedQueue {
+public class MyQueueBounded implements IBoundedQueue {
     @Override
     public Object Dequeue() {
         return null;
@@ -24,5 +24,10 @@ public class MyQueueUnbounded implements IUnboundedQueue {
     @Override
     public void enqueue(Object object) {
 
+    }
+
+    @Override
+    public boolean isFull() {
+        return false;
     }
 }
