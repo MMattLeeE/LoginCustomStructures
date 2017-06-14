@@ -5,7 +5,7 @@ package Util.MyDataStructures;
  */
 public class Node <T> {
     private T info;
-    private Node link;
+    private Node<T> link;
 
     public Node(T info) {
         this.info = info;
@@ -19,11 +19,11 @@ public class Node <T> {
         this.info = info;
     }
 
-    public Node getLink() {
+    public Node<T> getLink() {
         return link;
     }
 
-    public void setLink(Node link) {
+    public void setLink(Node<T> link) {
         this.link = link;
     }
 }

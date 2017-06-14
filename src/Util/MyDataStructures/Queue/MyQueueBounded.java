@@ -1,33 +1,38 @@
 package Util.MyDataStructures.Queue;
 
 import Util.MyDataStructures.Interfaces.Queue.IBoundedQueue;
+import Util.MyDataStructures.MyExceptions.QueueOverFlowException;
+
+import Util.MyDataStructures.Node;
 
 /**
  * Created by Matt on 6/12/2017.
  */
-public class MyQueueBounded implements IBoundedQueue {
-    @Override
-    public Object Dequeue() {
-        return null;
+public class MyQueueBounded<E> extends MyQueueAbstract<E> implements IBoundedQueue<E> {
+    private int limit = 4;
+
+    public MyQueueBounded() {
+        super();
     }
 
     @Override
-    public boolean isEmpty() {
-        return false;
-    }
+    public void enqueue(E input) throws QueueOverFlowException {
+        Node<E> newNode = new Node<>(input);
 
-    @Override
-    public int size() {
-        return 0;
-    }
+        if (isFull()) {
+            throw new QueueOverFlowException("The queue size limit is: " + limit);
+        } else if (isEmpty()) {
+            front = newNode;
+        } else {
+            back.setLink(newNode);
+        }
 
-    @Override
-    public void enqueue(Object object) {
-
+        back = newNode;
+        count++;
     }
 
     @Override
     public boolean isFull() {
-        return false;
+        return count == limit;
     }
 }
