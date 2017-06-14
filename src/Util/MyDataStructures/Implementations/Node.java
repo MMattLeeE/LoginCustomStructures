@@ -26,4 +26,5 @@ public class Node <T> {
     public void setLink(Node<T> link) {
         this.link = link;
     }
+
 }

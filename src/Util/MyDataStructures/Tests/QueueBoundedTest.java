@@ -19,10 +19,10 @@ public class QueueBoundedTest {
     String node3 = "node3";
     String node4 = "node4";
 
-    String test1 ="empty";
-    String test2 ="empty";
-    String test3 ="empty";
-    String test4 ="empty";
+    String test1 = "empty";
+    String test2 = "empty";
+    String test3 = "empty";
+    String test4 = "empty";
 
     @Rule
     public ExpectedException thrown = ExpectedException.none();
