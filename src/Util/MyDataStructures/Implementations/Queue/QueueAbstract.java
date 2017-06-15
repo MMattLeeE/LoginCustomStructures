@@ -45,4 +45,20 @@ public abstract class QueueAbstract<E> implements IQueueBase<E> {
     public int size() {
         return count;
     }
+
+    public String toString() {
+        String queueString =" ";
+
+        Node<E> currentNode = front;
+
+        while (currentNode.getLink()!= null) {
+            queueString = queueString + " " + currentNode.getInfo().toString() + "\n";
+            currentNode = currentNode.getLink();
+        }
+
+        queueString = queueString + " " + currentNode.getInfo().toString() + "\n";
+
+
+        return queueString;
+    }
 }

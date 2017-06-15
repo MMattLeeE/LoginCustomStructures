@@ -1,7 +1,9 @@
 package Util.MyDataStructures.Tests;
 
+import Model.User;
 import Util.MyDataStructures.Exceptions.QueueUnderFlowException;
 import Util.MyDataStructures.Implementations.Queue.QueueUnbounded;
+import Util.MyDataStructures.Implementations.Stack.StackUnbounded;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -108,6 +110,22 @@ public class QueueUnboundedTest {
     public void dequeueUnderflow() throws QueueUnderFlowException{
         thrown.expect(QueueUnderFlowException.class);
         testQueue.dequeue();
+
+    }
+
+    @Test
+    public void toStringTest() {
+        StackUnbounded testStack = new StackUnbounded();
+
+        User user1 = new User("test1");
+        User user2 = new User("test2");
+
+        testStack.push(user1);
+
+        assertEquals(" " + user1.toString() + "\n",testStack.toString());
+
+        testStack.push(user2);
+        assertEquals(" " + user2.toString() + "\n" + " " + user1.toString() + "\n", testStack.toString());
 
     }
 }

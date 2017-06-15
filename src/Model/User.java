@@ -12,9 +12,9 @@ public class User extends Person implements Serializable {
     private String phoneNumber;
     private String profilePhoto;
 
-    public User() {
+    public User(String input) {
         super();
-        setUsername("testUsername");
+        setUsername(input);
         setPassword("!1Testpassword");
         setEmail("testEmail@email.com");
         setPhoneNumber("1112223333");
@@ -76,5 +76,18 @@ public class User extends Person implements Serializable {
 
     public void setProfilePhoto(String profilePhoto) {
         this.profilePhoto = profilePhoto;
+    }
+
+    public String toString() {
+        return getFirstName() + "\n" +
+                getLastName() + "\n" +
+                getSsn() + "\n" +
+                getDob() + "\n" +
+                getGender() + "\n" +
+                username + "\n" +
+                password + "\n" +
+                email + "\n" +
+                phoneNumber + "\n" +
+                profilePhoto + "\n";
     }
 }

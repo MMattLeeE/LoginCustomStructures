@@ -10,6 +10,10 @@ import Util.MyDataStructures.Exceptions.StackOverFlowException;
 public class StackBounded<E> extends StackAbstract<E> implements IStackBounded<E>{
     int limit = 4;
 
+    public StackBounded() {
+        super();
+    }
+
     @Override
     public void push(E input) throws StackOverFlowException {
         Node<E> newNode = new Node<>(input);

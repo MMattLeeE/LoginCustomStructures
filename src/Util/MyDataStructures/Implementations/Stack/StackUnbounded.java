@@ -7,6 +7,11 @@ import Util.MyDataStructures.Interfaces.Stack.IStackUnbounded;
  * Created by Matt on 6/12/2017.
  */
 public class StackUnbounded<E> extends StackAbstract<E> implements IStackUnbounded<E> {
+
+   public StackUnbounded() {
+       super();
+   }
+
     @Override
     public void push(E input) {
         Node<E> newNode = new Node<>(input);

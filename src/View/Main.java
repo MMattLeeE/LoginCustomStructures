@@ -29,15 +29,12 @@ public class Main extends Application{
         primaryStage.setTitle("Matt Login");
         primaryStage.setScene(scene);
         primaryStage.show();
+
     }
 
     private void loadUserDB() {
         try{
-            System.out.println("+before user.dat is loaded into arraylist");
-            UserDB.printArrayList();
             UserDB.setUsersArrayList((ArrayList<User>) UserIO.readUsers());
-            System.out.println("+after user.dat is loaded into arraylist");
-            UserDB.printArrayList();
         } catch(IOException e) {
             System.err.print("Can't read/open users.dat file");
         } catch(ClassNotFoundException e) {

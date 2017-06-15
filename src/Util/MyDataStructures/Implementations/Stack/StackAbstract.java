@@ -12,6 +12,11 @@ public abstract class StackAbstract<E> implements IStackBase<E> {
     Node<E> stackTop;
     int count=0;
 
+    public StackAbstract() {
+        stackTop = null;
+        count = 0;
+    }
+
     // Returns the top element on stack and removes it from stack.
     @Override
     public E pop() throws StackUnderFlowException {
@@ -54,6 +59,7 @@ public abstract class StackAbstract<E> implements IStackBase<E> {
         return count;
     }
 
+
     public String toString() {
         String stackString = "";
         Node<E> currentNode = stackTop;
@@ -62,6 +68,8 @@ public abstract class StackAbstract<E> implements IStackBase<E> {
             stackString = stackString + " " + currentNode.getInfo().toString() + "\n";
             currentNode = currentNode.getLink();
         }
+
+        stackString = stackString + " " + currentNode.getInfo().toString() + "\n";
 
         return stackString;
     }
