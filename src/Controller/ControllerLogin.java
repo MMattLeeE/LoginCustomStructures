@@ -17,7 +17,9 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
- * Created by Matt on 5/27/2017.
+ * @author Matt
+ *  5/27/2017.
+ *  
  */
 public class ControllerLogin implements Initializable {
 

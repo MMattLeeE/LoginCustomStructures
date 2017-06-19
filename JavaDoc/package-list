@@ -1,0 +1,12 @@
+Controller
+Model
+Util.MyDataStructures.Exceptions
+Util.MyDataStructures.Implementations
+Util.MyDataStructures.Implementations.List
+Util.MyDataStructures.Implementations.Queue
+Util.MyDataStructures.Implementations.Stack
+Util.MyDataStructures.Interfaces.List
+Util.MyDataStructures.Interfaces.Queue
+Util.MyDataStructures.Interfaces.Stack
+Util.MyDataStructures.Tests
+View
