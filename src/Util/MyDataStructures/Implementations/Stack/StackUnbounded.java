@@ -5,6 +5,7 @@ import Util.MyDataStructures.Interfaces.Stack.IStackUnbounded;
 
 /**
  * Created by Matt on 6/12/2017.
+ * An unbounded link list stack.
  */
 public class StackUnbounded<E> extends StackAbstract<E> implements IStackUnbounded<E> {
 
@@ -12,6 +13,10 @@ public class StackUnbounded<E> extends StackAbstract<E> implements IStackUnbound
        super();
    }
 
+    /**
+     * Add element to stack
+     * @param input the element to add to stack
+     */
     @Override
     public void push(E input) {
         Node<E> newNode = new Node<>(input);

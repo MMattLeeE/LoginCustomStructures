@@ -7,6 +7,7 @@ import Util.MyDataStructures.Exceptions.ListUnderFlowException;
 
 /**
  * Created by Matt on 6/11/2017.
+ * Interface for ListIndexed that holds methods with different behavior from ListOrdered
  */
 public interface IListIndexed<E> extends IListBase<E> {
     void add(E object) throws ListElementDuplicate;

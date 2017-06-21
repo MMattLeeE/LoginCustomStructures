@@ -4,6 +4,7 @@ import Util.MyDataStructures.Exceptions.StackOverFlowException;
 
 /**
  * Created by Matt on 6/11/2017.
+ * Holds methods that behave differently from StackUnbounded
  */
 public interface IStackBounded<E> extends IStackBase<E> {
     void push(E input) throws StackOverFlowException;

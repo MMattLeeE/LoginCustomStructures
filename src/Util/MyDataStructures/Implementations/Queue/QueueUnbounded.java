@@ -5,6 +5,7 @@ import Util.MyDataStructures.Implementations.Node;
 
 /**
  * Created by msl2420 on 6/12/2017.
+ * A link list unbounded queue.
  */
 public class QueueUnbounded<E> extends QueueAbstract<E> implements IQueueUnbounded<E> {
 
@@ -12,6 +13,10 @@ public class QueueUnbounded<E> extends QueueAbstract<E> implements IQueueUnbound
         super();
     }
 
+    /**
+     * add an element to the front of the queue.
+     * @param input the element to add
+     */
     @Override
     public void enqueue(E input) {
         Node<E> newNode = new Node<>(input);

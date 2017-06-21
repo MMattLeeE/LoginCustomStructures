@@ -11,9 +11,13 @@ import java.util.List;
 
 /**
  * Created by Matt on 6/12/2017.
+ * A doubly linked index list.
  */
 public class ListIndexed<E extends Comparable<E>> extends ListAbstract<E> implements IListIndexed<E> {
 
+    /**
+     * Calls the default constructor of the ListAbstract class.
+     */
     public ListIndexed() {
         super();
     }
@@ -116,6 +120,16 @@ public class ListIndexed<E extends Comparable<E>> extends ListAbstract<E> implem
         }
     }
 
+    /**
+     * Takes out an element at a specified index and replaces it with object.
+     * @param index The index to replace an element.
+     * @param object The element that is being inserted.
+     * @return
+     * The element that is replaced.
+     * @throws ListIndexOutOfBounds If an index is out of bounds of the list.
+     * @throws ListUnderFlowException If the list is empty.
+     * @throws ListElementDuplicate If a duplicate element is being inserted into the list.
+     */
     @Override
     public E set(int index, E object) throws ListIndexOutOfBounds, ListUnderFlowException, ListElementDuplicate {
 
@@ -155,6 +169,13 @@ public class ListIndexed<E extends Comparable<E>> extends ListAbstract<E> implem
         return removedListElement;
     }
 
+    /**
+     * Finds the element in the list.
+     * @param index The location of the element desired.
+     * @return
+     * The element at the specified index in the list.
+     * @throws ListIndexOutOfBounds If the index is not in the bounds of the list.
+     */
     @Override
     public E get(int index) throws ListIndexOutOfBounds {
         E output;
@@ -171,6 +192,14 @@ public class ListIndexed<E extends Comparable<E>> extends ListAbstract<E> implem
         return output;
     }
 
+    /**
+     * Find the index of an element in a list.
+     * @param object The element to be found in the list.
+     * @return
+     * The index of the object.
+     * @throws ListElementNotFound If the element object doesn't exist in the list.
+     * @throws ListUnderFlowException If the list is empty.
+     */
     @Override
     public int indexOf(E object) throws ListElementNotFound, ListUnderFlowException {
         reset();
@@ -193,6 +222,14 @@ public class ListIndexed<E extends Comparable<E>> extends ListAbstract<E> implem
         return indexOut;
     }
 
+    /**
+     * Remove the element at the specified index in the list.
+     * @param index The location in the list to remove an element.
+     * @return
+     * The removed element.
+     * @throws ListIndexOutOfBounds If the index is out of the bounds of list.
+     * @throws ListUnderFlowException If the list is empty.
+     */
     @Override
     public E remove(int index) throws ListIndexOutOfBounds, ListUnderFlowException {
         E removedElement;

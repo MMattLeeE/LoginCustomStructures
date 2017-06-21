@@ -10,9 +10,15 @@ import java.io.Serializable;
 
 /**
  * Created by Matt on 6/12/2017.
+ * A doubly linked ordered index list.
  */
 public class ListOrdered<E extends Comparable<E>> extends ListAbstract<E> implements IListOrdered<E>, Serializable {
 
+    /**
+     * Adds an element into the list and maintains order using compareTo.
+     * @param object The element to insert into list.
+     * @throws ListElementDuplicate If the element being added already exists in the list.
+     */
     @Override
     public void add(E object) throws ListElementDuplicate {
 
@@ -77,6 +83,14 @@ public class ListOrdered<E extends Comparable<E>> extends ListAbstract<E> implem
         return output;
     }
 
+    /**
+     * Used to get an element from the List.
+     * When implemented with User class a temporary user object with the username to search for is used as the argument to find a user.
+     * @param object The element to get. In the case of Users, a User object is instantiated with the username one wants and is used as the argument.
+     * @return
+     * The actual element from the list.
+     * @throws ListElementNotFound If the element doesn't exist in the list.
+     */
     @Override
     public E get(E object) throws ListElementNotFound {
         E output = null;

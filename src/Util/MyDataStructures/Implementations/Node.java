@@ -5,7 +5,9 @@ package Util.MyDataStructures.Implementations;
  *
  * 6/12/2017.
  * Node class is used to created a linked list of nodes where the element being stored is placed in private field 'info'
- * and the link to the next node is placed in private field 'link'.
+ * and the link to the next node is placed in private field 'link'
+ * Used only for queue and stack
+ * .
  */
 public class Node <T> {
     private T info;

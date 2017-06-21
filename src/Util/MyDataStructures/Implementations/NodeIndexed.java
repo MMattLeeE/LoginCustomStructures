@@ -7,7 +7,8 @@ import java.io.Serializable;
  *
  * 6/12/2017.
  * Node class is used to created a linked list of nodes where the element being stored is placed in private field 'info'
- * and the right to the next node is placed in private field 'right'.
+ * and the right to the next node is placed in private field 'right'. It also has a field for storing an index. All lists use NodeIndexed while
+ * the queue and stack use Node.
  *
  * A NodeIndexed is:
  * -------------------------------
@@ -67,18 +68,36 @@ public class NodeIndexed <T extends Comparable<T>> implements Comparable<NodeInd
         this.right = right;
     }
 
+    /**
+     * Get the left node
+     * @return
+     * The left node
+     */
     public NodeIndexed<T> getLeft() {
         return left;
     }
 
+    /**
+     * link to left node
+     * @param left the node to set into the left
+     */
     public void setLeft(NodeIndexed<T> left) {
         this.left = left;
     }
 
+    /**
+     * set the index of the element
+     * @param index the index...
+     */
     public void setIndex(int index) {
         this.index = index;
     }
 
+    /**
+     * Get the index of the node
+     * @return
+     * The index of the node...
+     */
     public int getIndex() {
         return index;
     }
@@ -102,11 +121,25 @@ public class NodeIndexed <T extends Comparable<T>> implements Comparable<NodeInd
         nodeToLink.setIndex(index + 1);
     }
 
+    /**
+     * Implements compareTo and calls the compareTo implementation of E element in the node.
+     * @param o the node to compare to
+     * @return
+     * 0 if same
+     * pos if caller greater than o
+     * neg if caller less than o
+     */
     @Override
     public int compareTo(NodeIndexed<T> o) {
         return info.compareTo(o.info);
     }
 
+    /**
+     * String representation of node not of what is inside the node. Useful for debugging and testing.
+     * @return
+     * A pictogram of the node
+     * "=| left | index | info | right|="
+     */
     @Override
     public String toString() {
         String leftStr = " ";

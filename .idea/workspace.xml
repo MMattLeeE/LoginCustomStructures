@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="8" />
     <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
+  </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="LoginCustomStructures:jar" />
+    </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2efa67c-7b33-4b2d-900e-9fd76bd31068" name="Default" comment="" />
@@ -29,11 +33,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="NodeIndexed.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IListBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IListBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="27" column="79" lean-forward="false" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IStackUnbounded.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackUnbounded.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NodeIndexed.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/NodeIndexed.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="16" column="101" lean-forward="false" selection-start-line="16" selection-start-column="101" selection-end-line="16" selection-end-column="101" />
+            <state relative-caret-position="1580">
+              <caret line="160" column="5" lean-forward="true" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
               <folding>
                 <element signature="docComment;method#NodeIndexed#0;class#NodeIndexed#0" expanded="false" />
                 <element signature="docComment;method#getInfo#0;class#NodeIndexed#0" expanded="false" />
@@ -48,120 +72,72 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.dat" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/users.dat">
+      <file leaf-file-name="IListIndexed.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IListIndexed.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="126">
+              <caret line="9" column="69" lean-forward="false" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDB.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/UserDB.java">
+      <file leaf-file-name="IStackBounded.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackBounded.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="37" column="50" lean-forward="false" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+            <state relative-caret-position="126">
+              <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListAbstract.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListAbstract.java">
+      <file leaf-file-name="IListOrdered.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IListOrdered.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="83" lean-forward="false" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#ListAbstract#0;class#ListAbstract#0" expanded="false" />
-                <element signature="method#contains#0;class#ListAbstract#0" expanded="false" />
-                <element signature="method#getNext#0;class#ListAbstract#0" expanded="false" />
-                <element signature="method#toString#0;class#ListAbstract#0" expanded="false" />
-                <element signature="method#nodeToString#0;class#ListAbstract#0" expanded="false" />
-                <element signature="method#remove#0;class#ListAbstract#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1344">
-              <caret line="95" column="51" lean-forward="false" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="51" />
-              <folding>
-                <element signature="method#toString#0;class#User#0" expanded="false" />
-                <element signature="e#2467#2468#0" expanded="true" />
-                <element signature="e#2525#2526#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserCurrent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/UserCurrent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+            <state relative-caret-position="126">
+              <caret line="8" column="57" lean-forward="false" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Person.java">
+      <file leaf-file-name="IStackBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            <state relative-caret-position="126">
+              <caret line="6" column="104" lean-forward="false" selection-start-line="6" selection-start-column="104" selection-end-line="6" selection-end-column="104" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListIndexed.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListIndexed.java">
+      <file leaf-file-name="IQueueBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Queue/IQueueBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="250" column="1" lean-forward="true" selection-start-line="250" selection-start-column="1" selection-end-line="250" selection-end-column="1" />
-              <folding>
-                <element signature="docComment;method#add#0;class#ListIndexed#0" expanded="false" />
-                <element signature="method#add#0;class#ListIndexed#0" expanded="false" />
-                <element signature="docComment;method#add#1;class#ListIndexed#0" expanded="false" />
-                <element signature="method#add#1;class#ListIndexed#0" expanded="false" />
-                <element signature="method#set#0;class#ListIndexed#0" expanded="false" />
-                <element signature="method#get#0;class#ListIndexed#0" expanded="false" />
-                <element signature="method#indexOf#0;class#ListIndexed#0" expanded="false" />
-                <element signature="method#remove#0;class#ListIndexed#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListOrdered.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListOrdered.java">
+      <file leaf-file-name="IQueueBounded.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Queue/IQueueBounded.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="method#add#0;class#ListOrdered#0" expanded="false" />
-                <element signature="docComment;method#get#0;class#ListOrdered#0" expanded="false" />
-                <element signature="method#get#0;class#ListOrdered#0" expanded="false" />
-                <element signature="method#get#1;class#ListOrdered#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IQueueUnbounded.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Queue/IQueueUnbounded.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -188,57 +164,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Queue/IQueue.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Queue/MyQueueUnboundedTest.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Queue/IBoundedQueue.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Queue/MyQueueBounded.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Queue/MyQueueUnbounded.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Tests/MyQueueUnboundedTest.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Tests/MyQueueBoundedTest.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Node.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Queue/MyQueueAbstract.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/MyExceptions/StackOverFlowException.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/MyExceptions/StackUnderFlowException.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStack.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/MyStackAbstract.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/MyStackBounded.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/MyStackUnbounded.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackBounded.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackBase.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/StackUnbounded.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/StackBounded.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/StackAbstract.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Queue/QueueAbstract.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Tests/QueueBoundedTest.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Tests/StackUnboundedTest.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Tests/QueueUnboundedTest.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IIndexedList.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IOrderedList.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListUnderFlowException.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListIndexOutOfBounds.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListElementNotFound.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Tests/StackBoundedTest.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackUnbounded.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Node.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Tests/NodeIndexedTest.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListElementDuplicate.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IListIndexed.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListIndexed.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Tests/ListIndexedTest.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Tests/ListOrderedTest.java" />
         <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IListBase.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IListOrdered.java" />
         <option value="$PROJECT_DIR$/src/Model/UserDB.java" />
         <option value="$PROJECT_DIR$/src/Controller/ControllerRegister.java" />
         <option value="$PROJECT_DIR$/src/Controller/ControllerLogin.java" />
         <option value="$PROJECT_DIR$/src/Model/Person.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListOrdered.java" />
         <option value="$PROJECT_DIR$/src/View/Main.java" />
         <option value="$PROJECT_DIR$/src/Model/UserIO.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListAbstract.java" />
         <option value="$PROJECT_DIR$/src/Model/User.java" />
-        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/NodeIndexed.java" />
         <option value="$PROJECT_DIR$/users.dat" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListElementDuplicate.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListElementNotFound.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListIndexOutOfBounds.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListUnderFlowException.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/QueueOverFlowException.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/QueueUnderFlowException.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/StackOverFlowException.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/StackUnderFlowException.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListAbstract.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListIndexed.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListOrdered.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Queue/QueueAbstract.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Queue/QueueBounded.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Queue/QueueUnbounded.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/StackAbstract.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/StackBounded.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/StackUnbounded.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Node.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IListIndexed.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IListOrdered.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Queue/IQueueBase.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Queue/IQueueBounded.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Queue/IQueueUnbounded.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackBase.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackBounded.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackUnbounded.java" />
+        <option value="$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/NodeIndexed.java" />
       </list>
     </option>
   </component>
@@ -300,8 +276,26 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
+              <option name="myItemId" value="LoginCustomStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoginCustomStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyDataStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -320,6 +314,66 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MyDataStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interfaces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoginCustomStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoginCustomStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyDataStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interfaces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Queue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoginCustomStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoginCustomStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyDataStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interfaces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="List" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -437,25 +491,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoginCustomStructures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoginCustomStructures" />
+              <option name="myItemId" value="MyDataStructures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="Exceptions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -464,8 +504,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -1049,7 +1089,7 @@
       <workItem from="1497309304966" duration="7579000" />
       <workItem from="1497377574266" duration="40013000" />
       <workItem from="1497473085413" duration="16807000" />
-      <workItem from="1497816554423" duration="72776000" />
+      <workItem from="1497816554423" duration="78875000" />
     </task>
     <servers />
   </component>
@@ -1086,11 +1126,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139624000" />
+    <option name="totallyTimeSpent" value="145723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1111,9 +1150,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34201586" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34201586" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1933405" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1933405" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1140,303 +1179,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://JAVA/Util.MyDataStructures.Implementations.Stack.StackAbstract">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>Util.MyDataStructures.Implementations.Stack.StackAbstract</OriginalElement>
-          <nodes>
-            <node x="" y="">Util.MyDataStructures.Implementations.Stack.StackAbstract</node>
-            <node x="" y="">Util.MyDataStructures.Interfaces.Stack.IStackBase</node>
-            <node x="" y="">Util.MyDataStructures.Implementations.Stack.StackUnbounded</node>
-            <node x="" y="">Util.MyDataStructures.Implementations.Stack.StackBounded</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="147.0" y="259.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Constructors</Category>
-            <Category>Properties</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JavaScript-modules-diagram/C:/Users/Matt/Desktop/LoginCustomStructures/src/Model;C:/Users/Matt/Desktop/LoginCustomStructures/src/Controller;C:/Users/Matt/Desktop/LoginCustomStructures/src/Util/MyDataStructures;C:/Users/Matt/Desktop/LoginCustomStructures/src/View;">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JavaScript-modules-diagram</ID>
-          <OriginalElement>$PROJECT_DIR$/src/Model;C:/Users/Matt/Desktop/LoginCustomStructures/src/Controller;C:/Users/Matt/Desktop/LoginCustomStructures/src/Util/MyDataStructures;C:/Users/Matt/Desktop/LoginCustomStructures/src/View;</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="567.0" y="319.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>All</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>Details</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">com</node>
-            <node x="" y="">netscape</node>
-            <node x="" y="">junit</node>
-            <node x="" y="">org</node>
-            <node x="" y="">Util</node>
-            <node x="" y="">Controller</node>
-            <node x="" y="">View</node>
-            <node x="" y="">sun</node>
-            <node x="" y="">META-INF</node>
-            <node x="" y="">jdk</node>
-            <node x="" y="">java</node>
-            <node x="" y="">javax</node>
-            <node x="" y="">oracle.jrockit</node>
-            <node x="" y="">Model</node>
-            <node x="" y="">javafx</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="256.0" y="244.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Constructors</Category>
-            <Category>Properties</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/Controller">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>Controller</OriginalElement>
-          <nodes>
-            <node x="" y="">Controller.ControllerRegister</node>
-            <node x="" y="">Controller.ControllerLogin</node>
-            <node x="" y="">Controller.ControllerRegSuccess</node>
-            <node x="" y="">Controller.ControllerUserPage</node>
-            <node x="" y="">Controller.LoadPage</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.75177304964539" x="742.0" y="135.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Constructors</Category>
-            <Category>Properties</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/Util.MyDataStructures">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>Util.MyDataStructures</OriginalElement>
-          <nodes>
-            <node x="352.25" y="662.0">Util.MyDataStructures.Tests.QueueBoundedTest</node>
-            <node x="767.0" y="54.5">Util.MyDataStructures.Exceptions.QueueUnderFlowException</node>
-            <node x="392.0" y="879.0">Util.MyDataStructures.Exceptions.StackUnderFlowException</node>
-            <node x="0.0" y="264.0">Util.MyDataStructures.Exceptions.QueueOverFlowException</node>
-            <node x="20.75" y="879.0">Util.MyDataStructures.Interfaces.List.IList</node>
-            <node x="0.0" y="1318.0">Util.MyDataStructures.Implementations.List.OrderedList</node>
-            <node x="837.25" y="608.0">Util.MyDataStructures.Tests.QueueUnboundedTest</node>
-            <node x="328.0" y="250.5">Util.MyDataStructures.Interfaces.Queue.IQueueBounded</node>
-            <node x="1244.8333333333335" y="223.5">Util.MyDataStructures.Implementations.Stack.StackAbstract</node>
-            <node x="1104.0" y="0.0">Util.MyDataStructures.Implementations.Node</node>
-            <node x="869.75" y="452.5">Util.MyDataStructures.Implementations.Queue.QueueUnbounded</node>
-            <node x="797.0" y="223.0">Util.MyDataStructures.Implementations.Queue.QueueAbstract</node>
-            <node x="471.0" y="14.0">Util.MyDataStructures.Interfaces.Queue.IQueueBase</node>
-            <node x="1612.4583333333335" y="453.0">Util.MyDataStructures.Implementations.Stack.StackBounded</node>
-            <node x="561.0" y="264.0">Util.MyDataStructures.Interfaces.Queue.IQueueUnbounded</node>
-            <node x="185.0" y="1318.0">Util.MyDataStructures.Implementations.List.IndexedList</node>
-            <node x="343.75" y="439.0">Util.MyDataStructures.Implementations.Queue.QueueBounded</node>
-            <node x="0.0" y="1195.5">Util.MyDataStructures.Interfaces.List.IOrderedList</node>
-            <node x="180.0" y="1182.0">Util.MyDataStructures.Interfaces.List.IIndexedList</node>
-            <node x="1659.2083333333335" y="250.5">Util.MyDataStructures.Interfaces.Stack.IStackBounded</node>
-            <node x="1458.8333333333335" y="264.0">Util.MyDataStructures.Interfaces.Stack.IStackUnbounded</node>
-            <node x="746.0" y="879.0">Util.MyDataStructures.Exceptions.StackOverFlowException</node>
-            <node x="1458.092105263158" y="0.5">Util.MyDataStructures.Interfaces.Stack.IStackBase</node>
-            <node x="1349.342105263158" y="466.5">Util.MyDataStructures.Implementations.Stack.StackUnbounded</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="Util.MyDataStructures.Interfaces.Queue.IQueueBounded" target="Util.MyDataStructures.Interfaces.Queue.IQueueBase">
-              <point x="0.0" y="-45.5" />
-              <point x="434.5" y="203.0" />
-              <point x="508.5" y="203.0" />
-              <point x="-75.0" y="72.5" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Queue.QueueAbstract" target="Util.MyDataStructures.Exceptions.QueueUnderFlowException">
-              <point x="0.0" y="-73.0" />
-              <point x="0.0" y="32.0" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Stack.StackAbstract" target="Util.MyDataStructures.Implementations.Node">
-              <point x="-48.5" y="-72.5" />
-              <point x="1293.3333333333335" y="203.0" />
-              <point x="1300.0" y="203.0" />
-              <point x="84.0" y="86.5" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Queue.QueueBounded" target="Util.MyDataStructures.Interfaces.Queue.IQueueBounded">
-              <point x="-30.25" y="-59.5" />
-              <point x="0.0" y="45.5" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Queue.QueueBounded" target="Util.MyDataStructures.Exceptions.QueueOverFlowException">
-              <point x="-90.75" y="-59.5" />
-              <point x="374.0" y="419.0" />
-              <point x="154.0" y="419.0" />
-              <point x="0.0" y="32.0" />
-            </edge>
-            <edge source="Util.MyDataStructures.Interfaces.Stack.IStackUnbounded" target="Util.MyDataStructures.Interfaces.Stack.IStackBase">
-              <point x="0.0" y="-32.0" />
-              <point x="1548.8333333333335" y="203.0" />
-              <point x="1565.092105263158" y="203.0" />
-              <point x="0.0" y="86.0" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Queue.QueueAbstract" target="Util.MyDataStructures.Implementations.Node">
-              <point x="85.66666666666663" y="-73.0" />
-              <point x="1011.1666666666666" y="203.0" />
-              <point x="1132.0" y="203.0" />
-              <point x="-84.0" y="86.5" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Stack.StackUnbounded" target="Util.MyDataStructures.Interfaces.Stack.IStackUnbounded">
-              <point x="44.0" y="-32.0" />
-              <point x="1481.342105263158" y="419.0" />
-              <point x="1548.8333333333335" y="419.0" />
-              <point x="0.0" y="32.0" />
-            </edge>
-            <edge source="Util.MyDataStructures.Tests.QueueUnboundedTest" target="Util.MyDataStructures.Implementations.Queue.QueueUnbounded">
-              <point x="-76.25" y="-113.0" />
-              <point x="913.5" y="583.0" />
-              <point x="929.75" y="583.0" />
-              <point x="-60.0" y="46.0" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Stack.StackBounded" target="Util.MyDataStructures.Implementations.Stack.StackAbstract">
-              <point x="-46.75" y="-45.5" />
-              <point x="1659.2083333333335" y="409.0" />
-              <point x="1390.3333333333335" y="409.0" />
-              <point x="48.5" y="72.5" />
-            </edge>
-            <edge source="Util.MyDataStructures.Interfaces.Queue.IQueueUnbounded" target="Util.MyDataStructures.Interfaces.Queue.IQueueBase">
-              <point x="0.0" y="-32.0" />
-              <point x="657.5" y="203.0" />
-              <point x="583.5" y="203.0" />
-              <point x="0.0" y="72.5" />
-            </edge>
-            <edge source="Util.MyDataStructures.Interfaces.Stack.IStackBounded" target="Util.MyDataStructures.Interfaces.Stack.IStackBase">
-              <point x="0.0" y="-45.5" />
-              <point x="1752.7083333333335" y="203.0" />
-              <point x="1636.4254385964914" y="203.0" />
-              <point x="71.33333333333326" y="86.0" />
-            </edge>
-            <edge source="Util.MyDataStructures.Interfaces.List.IOrderedList" target="Util.MyDataStructures.Interfaces.List.IList">
-              <point x="0.0" y="-32.0" />
-              <point x="80.0" y="1157.0" />
-              <point x="96.25" y="1157.0" />
-              <point x="-75.5" y="126.5" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Stack.StackUnbounded" target="Util.MyDataStructures.Implementations.Stack.StackAbstract">
-              <point x="-44.0" y="-32.0" />
-              <point x="1393.342105263158" y="419.0" />
-              <point x="1293.3333333333335" y="419.0" />
-              <point x="-48.5" y="72.5" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Queue.QueueAbstract" target="Util.MyDataStructures.Interfaces.Queue.IQueueBase">
-              <point x="-85.66666666666674" y="-73.0" />
-              <point x="839.8333333333333" y="193.0" />
-              <point x="658.5" y="193.0" />
-              <point x="75.0" y="72.5" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Stack.StackAbstract" target="Util.MyDataStructures.Interfaces.Stack.IStackBase">
-              <point x="48.5" y="-72.5" />
-              <point x="1390.3333333333335" y="203.0" />
-              <point x="1493.758771929825" y="203.0" />
-              <point x="-71.33333333333326" y="86.0" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Stack.StackBounded" target="Util.MyDataStructures.Interfaces.Stack.IStackBounded">
-              <point x="46.75" y="-45.5" />
-              <point x="0.0" y="45.5" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Queue.QueueUnbounded" target="Util.MyDataStructures.Implementations.Node">
-              <point x="80.0" y="-46.0" />
-              <point x="1069.75" y="419.0" />
-              <point x="1229.3706140350878" y="419.0" />
-              <point x="1229.3706140350878" y="203.0" />
-              <point x="1244.0" y="203.0" />
-              <point x="28.0" y="86.5" />
-            </edge>
-            <edge source="Util.MyDataStructures.Interfaces.List.IIndexedList" target="Util.MyDataStructures.Interfaces.List.IList">
-              <point x="0.0" y="-45.5" />
-              <point x="263.5" y="1157.0" />
-              <point x="247.25" y="1157.0" />
-              <point x="75.5" y="126.5" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Queue.QueueUnbounded" target="Util.MyDataStructures.Implementations.Queue.QueueAbstract">
-              <point x="0.0" y="-46.0" />
-              <point x="64.25" y="73.0" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Queue.QueueBounded" target="Util.MyDataStructures.Implementations.Node">
-              <point x="90.75" y="-59.5" />
-              <point x="555.5" y="409.0" />
-              <point x="1209.0" y="409.0" />
-              <point x="1209.0" y="203.0" />
-              <point x="1188.0" y="203.0" />
-              <point x="-28.0" y="86.5" />
-            </edge>
-            <edge source="Util.MyDataStructures.Tests.QueueBoundedTest" target="Util.MyDataStructures.Implementations.Queue.QueueBounded">
-              <point x="-56.25" y="-59.0" />
-              <point x="408.5" y="583.0" />
-              <point x="404.25" y="583.0" />
-              <point x="-60.5" y="59.5" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Queue.QueueUnbounded" target="Util.MyDataStructures.Interfaces.Queue.IQueueUnbounded">
-              <point x="-80.0" y="-46.0" />
-              <point x="909.75" y="389.0" />
-              <point x="657.5" y="389.0" />
-              <point x="0.0" y="32.0" />
-            </edge>
-            <edge source="Util.MyDataStructures.Implementations.Queue.QueueBounded" target="Util.MyDataStructures.Implementations.Queue.QueueAbstract">
-              <point x="30.25" y="-59.5" />
-              <point x="495.0" y="399.0" />
-              <point x="861.25" y="399.0" />
-              <point x="-64.25" y="73.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.7622641509433962" x="735.0" y="336.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Inner Classes</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -1448,158 +1190,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/StackUnbounded.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#326#327#0" expanded="false" />
-            <element signature="e#347#348#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/allclasses-frame.html" />
     <entry file="file://$PROJECT_DIR$/index-files/index-1.html" />
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackUnbounded.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackBounded.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/StackAbstract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1354">
-          <caret line="73" column="27" lean-forward="false" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/StackBounded.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding>
-            <element signature="e#911#912#0" expanded="false" />
-            <element signature="e#948#949#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Queue/QueueUnbounded.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="16" column="44" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListIndexOutOfBounds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-          <folding>
-            <element signature="e#181#182#0" expanded="false" />
-            <element signature="e#207#208#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListUnderFlowException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#186#187#0" expanded="false" />
-            <element signature="e#212#213#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Queue/IQueueBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Queue/QueueBounded.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="e#411#412#0" expanded="false" />
-            <element signature="e#434#435#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Queue/QueueAbstract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Queue/IQueueBounded.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListElementNotFound.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#180#181#0" expanded="false" />
-            <element signature="e#206#207#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListElementDuplicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#182#183#0" expanded="false" />
-            <element signature="e#208#209#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Tests/ListIndexedTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -1682,36 +1274,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IListIndexed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IListBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="27" column="79" lean-forward="false" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IListOrdered.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/UserIO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1769,48 +1337,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListOrdered.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/UserDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="176">
+          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
           <folding>
-            <element signature="method#add#0;class#ListOrdered#0" expanded="false" />
-            <element signature="docComment;method#get#0;class#ListOrdered#0" expanded="false" />
-            <element signature="method#get#0;class#ListOrdered#0" expanded="false" />
-            <element signature="method#get#1;class#ListOrdered#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListIndexed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="250" column="1" lean-forward="true" selection-start-line="250" selection-start-column="1" selection-end-line="250" selection-end-column="1" />
-          <folding>
-            <element signature="docComment;method#add#0;class#ListIndexed#0" expanded="false" />
-            <element signature="method#add#0;class#ListIndexed#0" expanded="false" />
-            <element signature="docComment;method#add#1;class#ListIndexed#0" expanded="false" />
-            <element signature="method#add#1;class#ListIndexed#0" expanded="false" />
-            <element signature="method#set#0;class#ListIndexed#0" expanded="false" />
-            <element signature="method#get#0;class#ListIndexed#0" expanded="false" />
-            <element signature="method#indexOf#0;class#ListIndexed#0" expanded="false" />
-            <element signature="method#remove#0;class#ListIndexed#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListAbstract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="83" lean-forward="false" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ListAbstract#0;class#ListAbstract#0" expanded="false" />
-            <element signature="method#contains#0;class#ListAbstract#0" expanded="false" />
-            <element signature="method#getNext#0;class#ListAbstract#0" expanded="false" />
-            <element signature="method#toString#0;class#ListAbstract#0" expanded="false" />
-            <element signature="method#nodeToString#0;class#ListAbstract#0" expanded="false" />
-            <element signature="method#remove#0;class#ListAbstract#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1823,12 +1355,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/UserDB.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        <state relative-caret-position="1344">
+          <caret line="95" column="51" lean-forward="false" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="51" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#toString#0;class#User#0" expanded="false" />
+            <element signature="e#2467#2468#0" expanded="false" />
+            <element signature="e#2525#2526#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1849,22 +1383,298 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
+    <entry file="file://$PROJECT_DIR$/users.dat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="95" column="51" lean-forward="false" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="51" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListElementDuplicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="10" selection-end-column="7" />
           <folding>
-            <element signature="method#toString#0;class#User#0" expanded="false" />
-            <element signature="e#2467#2468#0" expanded="true" />
-            <element signature="e#2525#2526#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListElementNotFound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListIndexOutOfBounds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/ListUnderFlowException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/QueueOverFlowException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/QueueUnderFlowException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/StackOverFlowException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Exceptions/StackUnderFlowException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListAbstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#ListAbstract#0;class#ListAbstract#0" expanded="false" />
+            <element signature="method#ListAbstract#0;class#ListAbstract#0" expanded="false" />
+            <element signature="docComment;method#contains#0;class#ListAbstract#0" expanded="false" />
+            <element signature="method#contains#0;class#ListAbstract#0" expanded="false" />
+            <element signature="docComment;method#isEmpty#0;class#ListAbstract#0" expanded="false" />
+            <element signature="docComment;method#size#0;class#ListAbstract#0" expanded="false" />
+            <element signature="docComment;method#reset#0;class#ListAbstract#0" expanded="false" />
+            <element signature="docComment;method#getNext#0;class#ListAbstract#0" expanded="false" />
+            <element signature="method#getNext#0;class#ListAbstract#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#ListAbstract#0" expanded="false" />
+            <element signature="method#toString#0;class#ListAbstract#0" expanded="false" />
+            <element signature="docComment;method#nodeToString#0;class#ListAbstract#0" expanded="false" />
+            <element signature="method#nodeToString#0;class#ListAbstract#0" expanded="false" />
+            <element signature="docComment;method#remove#0;class#ListAbstract#0" expanded="false" />
+            <element signature="method#remove#0;class#ListAbstract#0" expanded="false" />
+            <element signature="docComment;method#getFront#0;class#ListAbstract#0" expanded="false" />
+            <element signature="docComment;method#getBack#0;class#ListAbstract#0" expanded="false" />
+            <element signature="docComment;method#getPointerNode#0;class#ListAbstract#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListIndexed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="224" column="4" lean-forward="false" selection-start-line="224" selection-start-column="4" selection-end-line="224" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;method#add#0;class#ListIndexed#0" expanded="false" />
+            <element signature="method#add#0;class#ListIndexed#0" expanded="false" />
+            <element signature="docComment;method#add#1;class#ListIndexed#0" expanded="false" />
+            <element signature="method#add#1;class#ListIndexed#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#ListIndexed#0" expanded="false" />
+            <element signature="method#set#0;class#ListIndexed#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#ListIndexed#0" expanded="false" />
+            <element signature="method#get#0;class#ListIndexed#0" expanded="false" />
+            <element signature="docComment;method#indexOf#0;class#ListIndexed#0" expanded="false" />
+            <element signature="method#indexOf#0;class#ListIndexed#0" expanded="false" />
+            <element signature="docComment;method#remove#0;class#ListIndexed#0" expanded="false" />
+            <element signature="method#remove#0;class#ListIndexed#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/List/ListOrdered.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="85" column="4" lean-forward="false" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#add#0;class#ListOrdered#0" expanded="false" />
+            <element signature="method#add#0;class#ListOrdered#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#ListOrdered#0" expanded="false" />
+            <element signature="method#get#0;class#ListOrdered#0" expanded="false" />
+            <element signature="docComment;method#get#1;class#ListOrdered#0" expanded="false" />
+            <element signature="method#get#1;class#ListOrdered#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Queue/QueueAbstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+          <folding>
+            <element signature="docComment;method#QueueAbstract#0;class#QueueAbstract#0" expanded="false" />
+            <element signature="method#QueueAbstract#0;class#QueueAbstract#0" expanded="false" />
+            <element signature="method#dequeue#0;class#QueueAbstract#0" expanded="false" />
+            <element signature="method#toString#0;class#QueueAbstract#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Queue/QueueBounded.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+          <folding>
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Queue/QueueUnbounded.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/StackAbstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="89" column="35" lean-forward="false" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/StackBounded.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding>
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Stack/StackUnbounded.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IListIndexed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="69" lean-forward="false" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IListOrdered.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="57" lean-forward="false" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/List/IListBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="27" column="79" lean-forward="false" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Queue/IQueueBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Queue/IQueueBounded.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Queue/IQueueUnbounded.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="104" lean-forward="false" selection-start-line="6" selection-start-column="104" selection-end-line="6" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackBounded.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Interfaces/Stack/IStackUnbounded.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Util/MyDataStructures/Implementations/NodeIndexed.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="16" column="101" lean-forward="false" selection-start-line="16" selection-start-column="101" selection-end-line="16" selection-end-column="101" />
+        <state relative-caret-position="1580">
+          <caret line="160" column="5" lean-forward="true" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
           <folding>
             <element signature="docComment;method#NodeIndexed#0;class#NodeIndexed#0" expanded="false" />
             <element signature="docComment;method#getInfo#0;class#NodeIndexed#0" expanded="false" />
@@ -1878,17 +1688,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>LoginCustomStructures:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -1907,6 +1735,19 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>LoginCustomStructures</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

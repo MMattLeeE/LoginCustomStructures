@@ -6,6 +6,7 @@ import Util.MyDataStructures.Exceptions.StackOverFlowException;
 
 /**
  * Created by msl2420 on 6/12/2017.
+ * A stack that has a limit/upper bound
  */
 public class StackBounded<E> extends StackAbstract<E> implements IStackBounded<E>{
     int limit = 4;
@@ -14,6 +15,11 @@ public class StackBounded<E> extends StackAbstract<E> implements IStackBounded<E
         super();
     }
 
+    /**
+     * Add to stack. Checks if its full
+     * @param input element to add
+     * @throws StackOverFlowException if stack is full
+     */
     @Override
     public void push(E input) throws StackOverFlowException {
         Node<E> newNode = new Node<>(input);
@@ -29,6 +35,12 @@ public class StackBounded<E> extends StackAbstract<E> implements IStackBounded<E
         count++;
     }
 
+    /**
+     * Checks if stack is full
+     * @return
+     * true if stack is full
+     * false if stack is not full
+     */
     @Override
     public boolean isFull() {
         return count == limit;
