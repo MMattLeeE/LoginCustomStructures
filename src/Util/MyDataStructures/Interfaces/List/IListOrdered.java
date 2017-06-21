@@ -9,5 +9,6 @@ import Util.MyDataStructures.Exceptions.ListUnderFlowException;
  */
 public interface IListOrdered<E> extends IListBase<E> {
     void add(E object) throws ListElementDuplicate;
+    E get() throws ListElementNotFound;
     E get(E object) throws ListElementNotFound;
 }

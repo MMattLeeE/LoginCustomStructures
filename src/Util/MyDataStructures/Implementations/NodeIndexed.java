@@ -1,5 +1,7 @@
 package Util.MyDataStructures.Implementations;
 
+import java.io.Serializable;
+
 /**
  * @author Matt
  *
@@ -12,7 +14,7 @@ package Util.MyDataStructures.Implementations;
  * | left | index | info | right |
  * -------------------------------
  */
-public class NodeIndexed <T extends Comparable<T>> implements Comparable<NodeIndexed<T>> {
+public class NodeIndexed <T extends Comparable<T>> implements Comparable<NodeIndexed<T>>,Serializable {
     private NodeIndexed<T> left;
     private int index = 0;
     private T info;

@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Created by Matt on 5/27/2017.
  */
-public class User extends Person implements Serializable {
+public class User extends Person implements Serializable, Comparable<User> {
     private String username;
     private String password;
     private String email;
@@ -89,5 +89,10 @@ public class User extends Person implements Serializable {
                 email + "\n" +
                 phoneNumber + "\n" +
                 profilePhoto + "\n";
+    }
+
+    @Override
+    public int compareTo(User o) {
+        return this.username.compareTo(o.username);
     }
 }

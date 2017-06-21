@@ -43,7 +43,7 @@ public class ListIndexedTest {
     @Test
     public void addTest() throws Exception {
         insertTestListItems();
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
         String front = testListIndexed.getFront();
         String back = testListIndexed.getBack();
 
@@ -59,7 +59,7 @@ public class ListIndexedTest {
         System.out.println("Inserting at index: 0");
         String insertElement0 = "index0";
         testListIndexed.add(0,insertElement0);
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
         System.out.println();
         assertEquals("index0",testListIndexed.get(0));
         assertEquals(10,testListIndexed.size());
@@ -69,7 +69,7 @@ public class ListIndexedTest {
         System.out.println("Inserting at index: 1");
         String insertElement1 = "index1";
         testListIndexed.add(1,insertElement1);
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
         System.out.println();
         assertEquals("index1",testListIndexed.get(1));
         assertEquals(11,testListIndexed.size());
@@ -79,7 +79,7 @@ public class ListIndexedTest {
         System.out.println("Inserting at index: 3");
         String insertElement3 = "index3";
         testListIndexed.add(3,insertElement3);
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
         System.out.println();
         assertEquals("index3",testListIndexed.get(3));
         assertEquals(12,testListIndexed.size());
@@ -89,7 +89,7 @@ public class ListIndexedTest {
         System.out.println("Inserting at index: 8");
         String insertElement8 = "index8";
         testListIndexed.add(8,insertElement8);
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
         System.out.println();
         assertEquals("index8",testListIndexed.get(8));
         assertEquals(13,testListIndexed.size());
@@ -99,7 +99,7 @@ public class ListIndexedTest {
         System.out.println("Inserting at index: 12");
         String insertElement12 = "index12";
         testListIndexed.add(12,insertElement12);
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
         System.out.println();
         assertEquals("index12",testListIndexed.get(12));
         assertEquals(14,testListIndexed.size());
@@ -109,7 +109,7 @@ public class ListIndexedTest {
         System.out.println("Inserting at index: 14");
         String insertElement14 = "index14";
         testListIndexed.add(14,insertElement14);
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
         System.out.println();
         assertEquals("index14",testListIndexed.get(14));
         assertEquals(15,testListIndexed.size());
@@ -139,7 +139,7 @@ public class ListIndexedTest {
         assertEquals("test6",output5);
         assertEquals("test9",output8);
 
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
     }
 
     @Test
@@ -186,23 +186,23 @@ public class ListIndexedTest {
     public void removeIndexTest() throws Exception {
         insertTestListItems();
         System.out.println("original");
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
 
         String out0 = testListIndexed.remove(0);
         System.out.println("remove at index 0: ");
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
 
         String out1 = testListIndexed.remove(1);
         System.out.println("remove at index 1: ");
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
 
         String out4 = testListIndexed.remove(4);
         System.out.println("remove at index 4: ");
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
 
         String out5 = testListIndexed.remove(5);
         System.out.println("remove at last index: ");
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
 
         assertEquals("test1",out0);
         assertEquals("test3",out1);
@@ -215,16 +215,16 @@ public class ListIndexedTest {
         insertTestListItems();
 
         boolean t1 = testListIndexed.remove("test1");
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
 
         boolean t2 = testListIndexed.remove("test3");
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
 
         boolean t3 = testListIndexed.remove("test7");
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
 
         boolean t4 = testListIndexed.remove("test9");
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
 
         assertEquals("test2",testListIndexed.get(0));
         assertEquals("test4",testListIndexed.get(1));
@@ -237,7 +237,7 @@ public class ListIndexedTest {
         assertEquals(true,t3);
         assertEquals(true,t4);
 
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
     }
 
     @Test
@@ -286,7 +286,7 @@ public class ListIndexedTest {
         insertTestListItems();
         System.out.println(testListIndexed.getPointerNode().toString());
 
-        System.out.println(testListIndexed.toString());
+        System.out.println(testListIndexed.nodeToString());
 
         assertEquals("test2",testListIndexed.getNext());
         assertEquals("test3",testListIndexed.getNext());

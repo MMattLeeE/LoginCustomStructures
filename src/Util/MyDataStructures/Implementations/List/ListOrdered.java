@@ -6,10 +6,12 @@ import Util.MyDataStructures.Exceptions.ListUnderFlowException;
 import Util.MyDataStructures.Implementations.NodeIndexed;
 import Util.MyDataStructures.Interfaces.List.IListOrdered;
 
+import java.io.Serializable;
+
 /**
  * Created by Matt on 6/12/2017.
  */
-public class ListOrdered<E extends Comparable<E>> extends ListAbstract<E> implements IListOrdered<E> {
+public class ListOrdered<E extends Comparable<E>> extends ListAbstract<E> implements IListOrdered<E>, Serializable {
 
     @Override
     public void add(E object) throws ListElementDuplicate {
@@ -52,6 +54,27 @@ public class ListOrdered<E extends Comparable<E>> extends ListAbstract<E> implem
                 }
             }
         }
+    }
+
+    /**
+     * A method that returns the element where the pointer is currently at.
+     * @return
+     * E The element the pointer is currently at.
+     * @throws
+     * ListElementNotFound If the current pointer has no element to return or the list is empty
+     *
+     */
+    @Override
+    public E get() throws ListElementNotFound {
+        E output;
+        if (pointer == null) {
+            throw new ListElementNotFound("There is no element to return. Pointer is null.");
+        } else if (isEmpty()) {
+            throw new ListElementNotFound("The list is empty. There is no element to get.");
+        } else {
+            output = pointer.getInfo();
+        }
+        return output;
     }
 
     @Override

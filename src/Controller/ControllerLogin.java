@@ -3,6 +3,7 @@ package Controller;
 import Model.User;
 import Model.UserCurrent;
 import Model.UserDB;
+import Util.MyDataStructures.Exceptions.ListElementNotFound;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -39,7 +40,11 @@ public class ControllerLogin implements Initializable {
 
         //set the action for logging in
         login.setOnAction(e -> {
-            authenticate(e);
+            try {
+                authenticate(e);
+            } catch (ListElementNotFound ex) {
+                System.err.println("When authenticating, the user with the input username is found using get(). If you're seeing this the contains method in ListOrdered is flawed...");
+            }
         });
 
         //set action listener for the register button; takes you to registration page
@@ -62,20 +67,20 @@ public class ControllerLogin implements Initializable {
      *  Finally the User page is loaded using LoadPage.loadUserPage(event)
      */
     @FXML
-    private void authenticate(ActionEvent event) {
+    private void authenticate(ActionEvent event) throws ListElementNotFound {
         User user = null;
         //check to see if the username and password fields are not empty
         if (usernameInput.getText().isEmpty() || passwordInput.getText().isEmpty()) {
             displayMessage("Please enter a username and password", Color.RED);
         } else {
+            //create a temporary user object with the same username as the usernameInput
+            User tempUser = new User(usernameInput.getText());
 
-            //Iterates through the array list database
-            for (int i = 0; i < UserDB.getUsersArrayList().size(); i++) {
-                //check to see if a username user inputs exists
-                if (usernameInput.getText().equals(UserDB.getUsersArrayList().get(i).getUsername())) {
-                    user = UserDB.getUsersArrayList().get(i);
-                }
+            //check to see if a user with the input username exists in ordered list
+            if (UserDB.getUsersArrayList().contains(tempUser)) {
+                user = UserDB.getUsersArrayList().get(tempUser);
             }
+
 
             //if a username is not found:
             if (user==null) {

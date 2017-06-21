@@ -3,6 +3,7 @@ package Controller;
 import Model.User;
 import Model.UserDB;
 import Model.UserIO;
+import Util.MyDataStructures.Exceptions.ListElementDuplicate;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -74,11 +75,13 @@ public class ControllerRegister implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         registerBtn.setOnAction(e -> {
             if(validateInputs()) {
-                addUser();
                 try {
+                    addUser();
                     LoadPage.loadRegSuccessPage(e);
                 } catch (IOException ex) {
                     System.err.println("problem loading registration success page");
+                } catch (ListElementDuplicate ex) {
+                    System.err.println("A user already has the same username. This should have been checked on the registration page...");
                 }
             }
         });
@@ -248,14 +251,15 @@ public class ControllerRegister implements Initializable {
     private boolean checkUsername() {
         boolean output = true;
 
-        for (int i = 0; i < UserDB.getUsersArrayList().size(); i++) {
-            if (newUsernameInput.getText().equals(UserDB.getUsersArrayList().get(i).getUsername())) {
-                errorsLabel.setText(errorsLabel.getText() + "\n" + "+" + newUsernameInput.getText() + " already exists. Pick another username.");
-                errorsLabel.setVisible(true);
-                newUsernameLabel.setTextFill(Color.RED);
-                output = false;
-            }
+        User tempUser = new User(newUsernameInput.getText().toLowerCase());
+
+        if (UserDB.getUsersArrayList().contains(tempUser)) {
+            errorsLabel.setText(errorsLabel.getText() + "\n" + "+" + newUsernameInput.getText() + " already exists. Pick another username.");
+            errorsLabel.setVisible(true);
+            newUsernameLabel.setTextFill(Color.RED);
+            output = false;
         }
+
         return output;
     }
     private boolean checkPhoneNumber() {
@@ -277,13 +281,13 @@ public class ControllerRegister implements Initializable {
     }
 
     //addUser() called once validateInputs() returns true
-    private void addUser() {
-        String firstName = firstNameInput.getText();
-        String lastName = lastNameInput.getText();
+    private void addUser() throws ListElementDuplicate {
+        String firstName = firstNameInput.getText().toLowerCase();
+        String lastName = lastNameInput.getText().toLowerCase();
         String ssn = ssnInput.getText();
         String dob = dateInput.getText();
         String gender = getRadio();
-        String username = newUsernameInput.getText();
+        String username = newUsernameInput.getText().toLowerCase();
         String password = newPasswordInput.getText();
         String email = emailInput.getText();
         String phoneNumber = phoneNumberInput.getText();
@@ -293,10 +297,10 @@ public class ControllerRegister implements Initializable {
 
         try {
             System.out.println("+before user is written into datfile");
-            UserDB.printArrayList();
+            UserDB.printOrderedList();
             UserIO.writeUsers(UserDB.getUsersArrayList());
             System.out.println("+after user is written into datfile");
-            UserDB.printArrayList();
+            UserDB.printOrderedList();
         } catch (IOException e) {
             System.err.println("can't write new user to dat file");
         }

@@ -24,7 +24,7 @@ public interface IListBase<E> {
     int size();
     String toString();
     void reset();
-    E getNext() throws ListUnderFlowException, ListIndexOutOfBounds;
-    boolean remove(E object) throws ListElementNotFound, ListUnderFlowException, ListIndexOutOfBounds;
+    E getNext() throws ListUnderFlowException, ListElementNotFound;
+    boolean remove(E object) throws ListElementNotFound, ListUnderFlowException;
 
 }

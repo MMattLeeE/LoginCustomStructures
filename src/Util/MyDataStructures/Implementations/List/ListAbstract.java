@@ -7,6 +7,8 @@ import Util.MyDataStructures.Implementations.NodeIndexed;
 import Util.MyDataStructures.Interfaces.List.IListBase;
 import com.sun.corba.se.impl.encoding.EncapsOutputStream;
 
+import java.io.Serializable;
+
 /**
  * Created by Matt on 6/14/2017.
  */
@@ -69,7 +71,7 @@ public abstract class ListAbstract<E extends Comparable<E>> implements IListBase
     }
 
     @Override
-    public E getNext() throws ListUnderFlowException, ListIndexOutOfBounds {
+    public E getNext() throws ListUnderFlowException, ListElementNotFound {
         E output;
 
         if (isEmpty()) {
@@ -78,7 +80,7 @@ public abstract class ListAbstract<E extends Comparable<E>> implements IListBase
             output = pointer.getRight().getInfo();
             pointer = pointer.getRight();
         } else {
-            throw new ListIndexOutOfBounds("End of list. There is no element to getNext().");
+            throw new ListElementNotFound("End of list. There is no element to getNext().");
         }
 
         return output;
@@ -86,6 +88,19 @@ public abstract class ListAbstract<E extends Comparable<E>> implements IListBase
 
     @Override
     public String toString() {
+        String outString ="";
+        reset();
+
+        while (pointer != null) {
+            outString = outString + pointer.getInfo().toString();
+            pointer = pointer.getRight();
+        }
+
+        reset();
+        return outString;
+    }
+
+    public String nodeToString() {
         String queueString ="";
 
         reset();
@@ -100,7 +115,7 @@ public abstract class ListAbstract<E extends Comparable<E>> implements IListBase
     }
 
     @Override
-    public boolean remove(E object) throws ListElementNotFound, ListUnderFlowException, ListIndexOutOfBounds {
+    public boolean remove(E object) throws ListElementNotFound, ListUnderFlowException {
         boolean isFound = false;
 
         reset();
@@ -170,4 +185,5 @@ public abstract class ListAbstract<E extends Comparable<E>> implements IListBase
     public NodeIndexed<E> getPointerNode() {
         return pointer;
     }
+
 }

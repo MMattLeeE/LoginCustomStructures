@@ -39,7 +39,7 @@ public class ListOrderedTest {
         testOrderedList.add(test4);
         testOrderedList.add(test6);
 
-        //System.out.println(testOrderedList.toString());
+        //System.out.println(testOrderedList.nodeToString());
         testOrderedList.reset();
         assertEquals(test2,testOrderedList.getNext());
         assertEquals(test3,testOrderedList.getNext());
