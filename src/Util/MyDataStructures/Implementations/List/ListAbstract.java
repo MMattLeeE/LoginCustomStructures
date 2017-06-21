@@ -17,7 +17,7 @@ import java.io.Serializable;
  *
  * All lists are doubly linked index lists. The ListOrdered just doesn't use the index fields on NodeIndexed.
  */
-public abstract class ListAbstract<E extends Comparable<E>> implements IListBase<E> {
+public abstract class ListAbstract<E extends Comparable<E>> implements IListBase<E>, Serializable {
 
     NodeIndexed<E> front;
     NodeIndexed<E> pointer;

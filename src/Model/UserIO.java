@@ -12,7 +12,6 @@ import java.nio.file.*;
  *      video 2:
  *          https://youtu.be/x9g-vXuHNkA
  *
- * A function checkForDatFile was added to create a .dat file when this program is first run without one.
  */
 public class UserIO {
 
