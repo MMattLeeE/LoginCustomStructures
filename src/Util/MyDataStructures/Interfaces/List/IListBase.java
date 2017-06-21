@@ -2,6 +2,7 @@ package Util.MyDataStructures.Interfaces.List;
 
 import Util.MyDataStructures.Exceptions.ListElementNotFound;
 
+import Util.MyDataStructures.Exceptions.ListIndexOutOfBounds;
 import Util.MyDataStructures.Exceptions.ListUnderFlowException;
 import Util.MyDataStructures.Implementations.NodeIndexed;
 
@@ -22,6 +23,8 @@ public interface IListBase<E> {
     boolean isEmpty();
     int size();
     String toString();
-    void reset() throws ListUnderFlowException;
-    E getNext() throws ListUnderFlowException;
+    void reset();
+    E getNext() throws ListUnderFlowException, ListIndexOutOfBounds;
+    boolean remove(E object) throws ListElementNotFound, ListUnderFlowException, ListIndexOutOfBounds;
+
 }
