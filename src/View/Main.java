@@ -3,7 +3,8 @@ package View;
 import Model.User;
 import Model.UserDB;
 import Model.UserIO;
-import Util.MyDataStructures.Implementations.List.ListOrdered;
+
+import MyDataStructures.Implementations.List.ListOrdered;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -11,7 +12,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.ArrayList;
+
 
 
 /**
@@ -37,11 +38,12 @@ public class Main extends Application{
         try{
             UserDB.setUsersArrayList((ListOrdered<User>) UserIO.readUsers());
             UserDB.printOrderedList();
+
             System.out.println();
         } catch(IOException e) {
             System.err.print("Can't read/open users.dat file");
         } catch(ClassNotFoundException e) {
-            System.err.print("Model.User class issue preventing reading or casting Model.UserDB");
+            System.err.print("Class not found...");
             e.printStackTrace();
         }
     }

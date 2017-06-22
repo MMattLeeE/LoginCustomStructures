@@ -3,7 +3,7 @@ package Controller;
 import Model.User;
 import Model.UserDB;
 import Model.UserIO;
-import Util.MyDataStructures.Exceptions.ListElementDuplicate;
+import MyDataStructures.Exceptions.ListElementDuplicate;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;

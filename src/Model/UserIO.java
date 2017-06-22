@@ -1,7 +1,7 @@
 package Model;
 
 import java.io.*;
-import java.nio.file.*;
+
 /**
  * Created by Matt on 5/30/2017.
  *
@@ -19,6 +19,8 @@ public class UserIO {
 
         ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream("users.dat"));
         output.writeObject(data);
+        output.flush();
+        output.close();
 
     }
 
@@ -26,6 +28,7 @@ public class UserIO {
 
         ObjectInputStream input = new ObjectInputStream(new FileInputStream("users.dat"));
         return input.readObject();
+
     }
 
 }

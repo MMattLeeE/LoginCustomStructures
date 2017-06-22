@@ -1,9 +1,6 @@
 package Model;
 
-import Util.MyDataStructures.Implementations.List.ListOrdered;
-
-import java.util.ArrayList;
-import java.util.List;
+import MyDataStructures.Implementations.List.ListOrdered;
 
 /**
  * Created by Matt on 5/30/2017.

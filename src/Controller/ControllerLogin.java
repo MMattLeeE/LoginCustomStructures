@@ -3,7 +3,8 @@ package Controller;
 import Model.User;
 import Model.UserCurrent;
 import Model.UserDB;
-import Util.MyDataStructures.Exceptions.ListElementNotFound;
+import MyDataStructures.Exceptions.ListElementNotFound;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
